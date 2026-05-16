@@ -10,6 +10,7 @@ import img150_1 from '../assets/images/regenerated_image_1778015160767.jpg';
 import img150_2 from '../assets/images/regenerated_image_1778015161564.jpg';
 import img300_1 from '../assets/images/regenerated_image_1778015162482.jpg';
 import img300_2 from '../assets/images/regenerated_image_1778015163464.jpg';
+import img300_3 from '../assets/images/xpulse_200.jpg.48.39.jpeg';
 
 interface CategoryCardProps {
   title: string;
@@ -211,7 +212,7 @@ export default function Motos() {
         <div className="category-card p-4 md:p-8 mb-8">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             <div className="flex-1 space-y-4">
-              <h3 className="text-2xl font-black uppercase text-brand-orange">150cc con Embrague</h3>
+              <h3 className="text-2xl font-black uppercase text-brand-orange">hasta 150cc con embrague</h3>
               <p className="text-white/60 text-lg leading-relaxed">
                 Dominá el arte del cambio manual. Motos diseñadas para aprender el control preciso del embrague y la potencia, fundamentales para avanzar a categorías superiores.
               </p>
@@ -249,10 +250,10 @@ export default function Motos() {
           </div>
         </div>
 
-        <div className="category-card p-4 md:p-8">
+        <div className="category-card p-4 md:p-8 mb-8">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             <div className="flex-1 space-y-4">
-              <h3 className="text-2xl font-black uppercase text-brand-orange">300cc y más...</h3>
+              <h3 className="text-2xl font-black uppercase text-brand-orange">hasta 300 cc</h3>
               <p className="text-white/60 text-lg leading-relaxed">
                 Potencia y control para el segmento más exigente. Motocicletas de alta cilindrada para quienes buscan perfeccionar su técnica avanzada en ruta y ciudad.
               </p>
@@ -261,7 +262,7 @@ export default function Motos() {
                  <div className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest leading-none">Frenado ABS</div>
               </div>
             </div>
-            <div className="flex-1 grid grid-cols-2 gap-4 w-full">
+            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
               <motion.div 
                 whileHover={{ scale: 1.02 }}
                 className="aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-white/5 relative group"
@@ -274,6 +275,35 @@ export default function Motos() {
                 />
                 <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/80 backdrop-blur-md border border-white/10 rounded text-[9px] font-bold uppercase tracking-tighter">Modelo XR Tornado 250</div>
               </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-white/5 relative group"
+              >
+                <img 
+                  src={img300_3} 
+                  alt="Modelo Xpulse 200" 
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/80 backdrop-blur-md border border-white/10 rounded text-[9px] font-bold uppercase tracking-tighter">Modelo Xpulse 200</div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+
+        <div className="category-card p-4 md:p-8">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            <div className="flex-1 space-y-4">
+              <h3 className="text-2xl font-black uppercase text-brand-orange">más de 300cc</h3>
+              <p className="text-white/60 text-lg leading-relaxed">
+                Máxima potencia y respuesta para pilotos con experiencia. La categoría reina para quienes dominan el asfalto.
+              </p>
+              <div className="flex gap-4 pt-4">
+                 <div className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest leading-none">Máxima Potencia</div>
+                 <div className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest leading-none">Avanzada</div>
+              </div>
+            </div>
+            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
               <motion.div 
                 whileHover={{ scale: 1.02 }}
                 className="aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-white/5 relative group"
